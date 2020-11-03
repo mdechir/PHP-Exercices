@@ -7,15 +7,16 @@
 </head>
 
 <body>
-    <form action="" method="GET">
+    <form action="exercice7.php" method="_SESSIONS">
     <input type="text " name="nom">
     <input type="submit">
+
 </form>
     <?php
 
-    if (isset($_GET['nom']))
+    if (isset($_SESSIONS['nom']))
     {
-        echo "votre nom est -> ".$_GET['nom'];
+        echo "votre nom est -> ".$_SESSIONS['nom'];
     }
     else
     {
@@ -24,8 +25,6 @@
  
     echo "<br>";
     highlight_file(__FILE__);
-
-
 
     ?>
 </body>

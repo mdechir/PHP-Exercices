@@ -7,15 +7,14 @@
 </head>
 
 <body>
-    <form action="" method="POST">
-    <input type="text " name="nom">
-    <input type="submit">
-</form>
+    <form action="exercice5.php" method="GET">
+    <input type="text " id="name" name="nom">
+    <input type="submit"> </form>
     <?php
 
-    if (isset($_POST['nom']))
+    if (isset($_GET['nom']))
     {
-        echo "votre nom est -> ".$_POST['nom'];
+        echo "votre nom est -> ".$_GET['nom'];
     }
     else
     {
@@ -23,7 +22,6 @@
     }
  
     highlight_file(__FILE__);
-
     ?>
 </body>
 </html>
